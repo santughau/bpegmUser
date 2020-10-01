@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>मी तयार केलेले ई-साहित्य .... </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item
+      *ngFor="let data of data"
+      (click)="detailsPage(data.id)"
+      style="cursor: pointer"
+    >
+      <ion-avatar slot="start">
+        <img src="../../../assets/123.jpg" />
+      </ion-avatar>
+      <ion-label>
+        <h2>{{data.subject}}</h2>
+        <p>वर्ग {{data.className}} विषय : {{data.subjectName}}</p>
+        <p>Views : {{data.views}}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

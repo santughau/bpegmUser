@@ -1,0 +1,8 @@
+{
+  "name": "pdfviewer",
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
+  "type": "angular"
+}
